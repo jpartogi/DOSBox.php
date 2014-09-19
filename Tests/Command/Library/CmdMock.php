@@ -1,13 +1,15 @@
 <?php
 
-namespace DOSBox\Command\Library;
+namespace Tests\Command\Library;
 
 use DOSBox\Interfaces\IDrive;
 use DOSBox\Interfaces\IOutputter;
-use DOSBox\Filesystem\File;
-use DOSBox\Command\Framework\Command as Command;
 
-class CmdMkFile extends Command {
+use DOSBox\Command\Framework\Command;
+
+class CmdMock extends Command {
+    public $executed = false;
+
     public function __construct($commandName, IDrive $drive){
         parent::__construct($commandName, $drive);
     }
@@ -21,10 +23,6 @@ class CmdMkFile extends Command {
     }
 
     public function execute(IOutputter $outputter){
-        $fileName = $this->params[0];
-        $fileContent = $this->params[1];
-        $newFile = new File($fileName, $fileContent);
-        $this->getDrive()->getCurrentDirectory()->add($newFile);
+        $this->executed = true;
     }
-
 }

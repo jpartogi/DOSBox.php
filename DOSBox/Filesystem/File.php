@@ -1,22 +1,34 @@
 <?php
 
-namespace DOSBox\Filesystem {
-	use DOSBox\Filesystem\FileSystemItem;
+namespace DOSBox\Filesystem;
 
-	class File extends FileSystemItem {
-		private $content; 
+use DOSBox\Filesystem\FileSystemItem;
 
-		public function __construct($name, $content){
-			parent::__construct($name, NULL);
-			$this->content = $content;
-		}
+class File extends FileSystemItem {
+    private $content;
 
-		public function isDirectory() {
-			return false;
-		}
+    public function __construct($name, $content){
+        parent::__construct($name, NULL);
+        $this->content = $content;
+    }
 
-		public function getSize() {
-			return strlen($this->content);
-		}
-	}
+    public function getFileContent() {
+        return $this->content;
+    }
+
+    public function isDirectory() {
+        return false;
+    }
+
+    public function getSize() {
+        return strlen($this->content);
+    }
+
+    public function getNumberOfContainedFiles() {
+        return 0;  // A file does not contain any other files
+    }
+
+    public function getNumberOfContainedDirectories() {
+        return 0;  // A file does not contain any sub-directories
+    }
 }

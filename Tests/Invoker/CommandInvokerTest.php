@@ -1,14 +1,14 @@
 <?php
 
-require_once 'DOSBoxTestCase.php';
+namespace Tests\Invoker;
+
+use Tests\DOSBoxTestCase;
 
 use DOSBox\Invoker\CommandInvoker;
-use DOSBox\Command\Mock\CmdMock;
+use Tests\Command\Library\CmdMock;
 
-class CommandInvokerTest extends DOSBoxTestCase 
-{
-    protected function setUp()
-    {
+class CommandInvokerTest extends DOSBoxTestCase {
+    protected function setUp() {
     	parent::setUp();
     	$this->drive = $this->getMock('DOSBox\Interfaces\IDrive');
     	$this->outputter = $this->getMock('DOSBox\Interfaces\IOutputter');
@@ -73,8 +73,7 @@ class CommandInvokerTest extends DOSBoxTestCase
 		$this->assertEquals("param1", $params[1]);
     }
 
-    public function testExecuteCommand()
-    {
+    public function testExecuteCommand() {
     	$this->invoker->executeCommand("test", $this->outputter );
     	$this->assertTrue($this->command->executed);
     }
