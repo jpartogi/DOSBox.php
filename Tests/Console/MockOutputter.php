@@ -24,4 +24,9 @@ class MockOutputter extends ConsoleOutputter {
     public function getOutput(){
         return $this->output;
     }
+
+    public function _empty(){
+        $this->output = "";
+    }
+
 } 

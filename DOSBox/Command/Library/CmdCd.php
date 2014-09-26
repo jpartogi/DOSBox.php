@@ -8,7 +8,7 @@ use DOSBOx\Filesystem\Directory;
 use DOSBox\Command\Framework\Command as Command;
 
 class CmdCd extends Command {
-    const SYSTEM_CANNOT_FIND_THE_PATH_SPECIFIED = "The system cannot find the path specified";
+    const SYSTEM_CANNOT_FIND_THE_PATH_SPECIFIED = "The system cannot find the path specified.";
     const DESTINATION_IS_FILE = "The directory name is invalid.";
 
     private $destinationDirectory;

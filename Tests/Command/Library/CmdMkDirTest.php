@@ -40,10 +40,23 @@ class CmdMkDirTest extends DOSBoxTestCase {
         $this->assertEmpty($this->mockOutputter->getOutput());
     }
 
+    public function testCmdMkDir_SingleLetterDirectory_NewDirectoryIsAdded(){
+        $testDirName = "a";
+        $this->executeCommand("mkdir " . $testDirName);
+        $testDirectory = $this->drive->getItemFromPath( $this->drive->getDriveLetter() . '\\' . $testDirName );
+        $this->assertEmpty($this->mockOutputter->getOutput()); // success
+        $this->assertSame($this->drive->getRootDirectory(), $testDirectory->getParent());
+    }
+
     public function CmdMkDir_NoParameters_ErrorMessagePrinted() {
         $this->executeCommand("mkdir");
         $this->assertEquals($this->numbersOfDirectoriesBeforeTest, $this->drive->getRootDirectory()->getNumberOfContainedDirectories());
         $this->assertContains("syntax of the command is incorrect", $this->mockOutputter->getOutput());
+    }
+
+    public function testCmdMkDir_ParameterContainsBacklash_ErrorMessagePrinted(){
+        $this->executeCommand("mkdir c:\\test1");
+        $this->assertContains(CmdMkDir::PARAMETER_CONTAINS_BACKLASH, $this->mockOutputter->getOutput());
     }
 
     public function testCmdMkDir_ParameterContainsBacklash_NoDirectoryCreated() {
