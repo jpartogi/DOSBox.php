@@ -19,7 +19,7 @@ class Console {
     }
 
     public function processInput(){
-        $this->outputter->printLine("DOSBox, Scrum.org, Professional Scrum Developer Training");
+        $this->outputter->printLine("DOSBox, Scrum.org, Professional Scrum Developer Training.");
         $this->outputter->printLine("Copyright (c) Joshua Partogi. All rights reserved.");
 
         $line = "";
