@@ -1,7 +1,7 @@
 <?php
 
 use DOSBox\Invoker\CommandInvoker;
-use DOSBOx\Console\MockOutputter;
+use DOSBox\Console\MockOutputter;
 
 class DOSBoxTestCase extends PHPUnit_Framework_TestCase {
     protected $commandInvoker;
