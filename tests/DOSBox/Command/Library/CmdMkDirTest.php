@@ -1,9 +1,5 @@
 <?php
 
-namespace Tests\Command\Library;
-
-use Tests\DOSBoxTestCase;
-
 use DOSBox\Filesystem\Directory;
 use DOSBox\Command\Library\CmdMkDir;
 use DOSBox\Filesystem\Drive;

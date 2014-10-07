@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Command\Library;
+namespace DOSBox\Command\Library;
 
 use DOSBox\Interfaces\IDrive;
 use DOSBox\Interfaces\IOutputter;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Console;
+namespace DOSBox\Console;
 
 use DOSBox\Console\ConsoleOutputter;
 

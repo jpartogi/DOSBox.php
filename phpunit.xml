@@ -5,8 +5,9 @@
          backupGlobals="false"
          verbose="false">
   <testsuites>
-    <testsuite name="small">
-      <directory suffix="Test.php">.\Tests</directory>
+    <testsuite name="dosbox">
+      <directory suffix="*Test.php">./tests</directory>
+        <!--<file>tests/Command/Library/CmdCdTest.php</file>-->
     </testsuite>
   </testsuites>
 

@@ -1,7 +1,7 @@
 <?php
-namespace Tests\Command\Library;
+//namespace Tests\Command\Library;
 
-use Tests\DOSBoxTestCase;
+//use Tests\DOSBoxTestCase;
 
 use DOSBox\Filesystem\Directory;
 use DOSBox\Command\Library\CmdMkFile;

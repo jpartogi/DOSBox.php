@@ -1,8 +1,8 @@
 <?php
 
-namespace Tests\Filesystem;
+//namespace Tests\Filesystem;
 
-use Tests\DOSBoxTestCase;
+//use Tests\DOSBoxTestCase;
 
 class FileTest extends DOSBoxTestCase {
     protected function setUp() {

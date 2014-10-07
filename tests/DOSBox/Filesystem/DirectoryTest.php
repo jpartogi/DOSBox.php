@@ -1,8 +1,8 @@
 <?php
 
-namespace Tests\Filesystem;
+//namespace Tests\Filesystem;
 
-use Tests\DOSBoxTestCase;
+//use Tests\DOSBoxTestCase;
 use DOSBox\Filesystem\Directory;
 
 class DirectoryTest extends DOSBoxTestCase {

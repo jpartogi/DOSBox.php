@@ -1,11 +1,7 @@
 <?php
 
-namespace Tests\Invoker;
-
-use Tests\DOSBoxTestCase;
-
 use DOSBox\Invoker\CommandInvoker;
-use Tests\Command\Library\CmdMock;
+use DOSBox\Command\Library\CmdMock;
 
 class CommandInvokerTest extends DOSBoxTestCase {
     protected function setUp() {

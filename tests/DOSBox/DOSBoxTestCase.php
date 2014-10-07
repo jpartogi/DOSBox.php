@@ -1,12 +1,9 @@
 <?php
 
-namespace Tests;
-
 use DOSBox\Invoker\CommandInvoker;
+use DOSBOx\Console\MockOutputter;
 
-use Tests\Console\MockOutputter;
-
-class DOSBoxTestCase extends \PHPUnit_Framework_TestCase {
+class DOSBoxTestCase extends PHPUnit_Framework_TestCase {
     protected $commandInvoker;
     protected $mockOutputter;
 
