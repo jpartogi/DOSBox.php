@@ -5,7 +5,7 @@ namespace DOSBox\Command\Library;
 use DOSBox\Interfaces\IDrive;
 use DOSBox\Interfaces\IOutputter;
 use DOSBox\Filesystem\File;
-use DOSBox\Command\Framework\Command as Command;
+use DOSBox\Command\BaseCommand as Command;
 
 class CmdMkFile extends Command {
     public function __construct($commandName, IDrive $drive){

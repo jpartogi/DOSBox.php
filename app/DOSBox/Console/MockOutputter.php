@@ -2,8 +2,6 @@
 
 namespace DOSBox\Console;
 
-use DOSBox\Console\ConsoleOutputter;
-
 class MockOutputter extends ConsoleOutputter {
     private $output = "";
 

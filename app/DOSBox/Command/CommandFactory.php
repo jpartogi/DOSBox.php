@@ -1,9 +1,12 @@
 <?php
 
-namespace DOSBox\Command\Library;
+namespace DOSBox\Command;
 
 use DOSBox\Interfaces\IDrive;
 use DOSBox\Command\Library\CmdCd as CmdCd;
+use DOSBox\Command\Library\CmdDir as CmdDir;
+use DOSBox\Command\Library\CmdMkDir as CmdMkDir;
+use DOSBox\Command\Library\CmdMkFile as CmdMkFile;
 
 class CommandFactory {
     private $commands = array();

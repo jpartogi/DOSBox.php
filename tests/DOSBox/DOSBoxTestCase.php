@@ -1,6 +1,6 @@
 <?php
 
-use DOSBox\Invoker\CommandInvoker;
+use DOSBox\Command\CommandInvoker;
 use DOSBox\Console\MockOutputter;
 
 class DOSBoxTestCase extends PHPUnit_Framework_TestCase {

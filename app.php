@@ -7,7 +7,7 @@ spl_autoload_register(function ($class_name) {
 
 // $line = trim(fgets(STDIN)); // reads one line from STDIN
 
-use DOSBox\Configuration\Configurator as Configurator;
+use DOSBox\System\Configurator as Configurator;
 
 $config = new Configurator();
-$config->configurateSystem();
+$config->configureSystem();

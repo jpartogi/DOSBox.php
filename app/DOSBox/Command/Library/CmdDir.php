@@ -5,7 +5,7 @@ namespace DOSBox\Command\Library;
 use DOSBox\Interfaces\IDrive;
 use DOSBox\Interfaces\IOutputter;
 use DOSBox\Filesystem\Directory;
-use DOSBox\Command\Framework\Command as Command;
+use DOSBox\Command\BaseCommand as Command;
 
 class CmdDir extends Command {
     private $directoryToPrint;
@@ -53,18 +53,19 @@ class CmdDir extends Command {
     }
 
     public function printHeader($directoryToPrint, IOutputter $outputter) {
-        $outputter->printLine("Directory of " . $directoryToPrint->getPath());
+        $outputter->printLine(" Directory of " . $directoryToPrint->getPath());
         $outputter->newLine();
     }
 
     public function printContent($directoryContent, IOutputter $outputter) {
         foreach ($directoryContent as $item) {
             if ($item->isDirectory()) {
+                $outputter->printNoLine("\t\t\t");
                 $outputter->printNoLine("<DIR>");
                 $outputter->printNoLine("\t");
                 $outputter->printNoLine("  ");
             } else {
-                $outputter->printNoLine("\t");
+                $outputter->printNoLine("\t\t\t\t");
                 $outputter->printNoLine($item->getSize() . " ");
             }
 

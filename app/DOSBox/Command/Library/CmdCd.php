@@ -5,7 +5,7 @@ namespace DOSBox\Command\Library;
 use DOSBox\Interfaces\IDrive;
 use DOSBox\Interfaces\IOutputter;
 use DOSBOx\Filesystem\Directory;
-use DOSBox\Command\Framework\Command as Command;
+use DOSBox\Command\BaseCommand as Command;
 
 class CmdCd extends Command {
     const SYSTEM_CANNOT_FIND_THE_PATH_SPECIFIED = "The system cannot find the path specified.";

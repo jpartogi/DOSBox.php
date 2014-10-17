@@ -5,7 +5,7 @@ namespace DOSBox\Command\Library;
 use DOSBox\Interfaces\IDrive;
 use DOSBox\Interfaces\IOutputter;
 use DOSBox\Filesystem\Directory;
-use DOSBox\Command\Framework\Command as Command;
+use DOSBox\Command\BaseCommand as Command;
 
 class CmdMkDir extends Command {
     const PARAMETER_CONTAINS_BACKLASH = "At least one parameter denotes a path rather than a directory name.";

@@ -5,7 +5,7 @@ namespace DOSBox\Command\Library;
 use DOSBox\Interfaces\IDrive;
 use DOSBox\Interfaces\IOutputter;
 
-use DOSBox\Command\Framework\Command;
+use DOSBox\Command\BaseCommand as Command;
 
 class CmdMock extends Command {
     public $executed = false;

@@ -1,15 +1,14 @@
 <?php
 
-namespace DOSBox\Configuration;
+namespace DOSBox\System;
 
 use DOSBox\Filesystem\Drive as Drive;
-use DOSBox\Interfaces\IDrive;
-use DOSBox\Command\Library\CommandFactory as CommandFactory;
-use DOSBox\Invoker\CommandInvoker as CommandInvoker;
+use DOSBox\Command\CommandFactory as CommandFactory;
+use DOSBox\Command\CommandInvoker as CommandInvoker;
 use DOSBox\Console\Console;
 
 class Configurator {
-    public function configurateSystem() {
+    public function configureSystem() {
         $drive = new Drive("C");
         $drive->restore();
 

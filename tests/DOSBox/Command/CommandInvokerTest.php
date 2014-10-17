@@ -1,6 +1,6 @@
 <?php
 
-use DOSBox\Invoker\CommandInvoker;
+use DOSBox\Command\CommandInvoker;
 use DOSBox\Command\Library\CmdMock;
 
 class CommandInvokerTest extends DOSBoxTestCase {

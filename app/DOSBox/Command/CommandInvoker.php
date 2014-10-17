@@ -1,6 +1,6 @@
 <?php
 
-namespace DOSBox\Invoker;
+namespace DOSBox\Command;
 
 use DOSBox\Interfaces\IExecuteCommand;
 use DOSBox\Interfaces\IOutputter;

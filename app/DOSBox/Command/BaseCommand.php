@@ -1,11 +1,11 @@
 <?php
 
-namespace DOSBox\Command\Framework;
+namespace DOSBox\Command;
 
 use DOSBox\Interfaces\IDrive;
 use DOSBox\Interfaces\IOutputter;
 
-abstract class Command {
+abstract class BaseCommand {
     protected $commandName;
     protected $drive;
     protected $params = array();
