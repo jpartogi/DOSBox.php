@@ -6,6 +6,7 @@ use DOSBox\Filesystem\Drive as Drive;
 use DOSBox\Command\CommandFactory as CommandFactory;
 use DOSBox\Command\CommandInvoker as CommandInvoker;
 use DOSBox\Console\Console;
+use DOSBox\Console\ConsoleOutputter;
 
 class Configurator {
     public function configureSystem() {
@@ -14,9 +15,10 @@ class Configurator {
 
         $factory = new CommandFactory($drive);
         $commandInvoker = new CommandInvoker();
-        $commandInvoker->setCommands($factory->getCommandList());
+        $commandInvoker->setCommands($factory->getCommands());
 
-        $console = new Console($commandInvoker, $drive);
+        $outputter = new ConsoleOutputter();
+        $console = new Console($commandInvoker, $drive, $outputter);
 
         $console->processInput();
     }

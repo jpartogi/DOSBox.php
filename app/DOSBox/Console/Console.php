@@ -12,10 +12,10 @@ class Console {
     private $drive;
     private $outputter;
 
-    public function __construct(IExecuteCommand $invoker, IDrive $drive){
+    public function __construct(IExecuteCommand $invoker, IDrive $drive, IOutputter $outputter){
         $this->invoker = $invoker;
         $this->drive = $drive;
-        $this->outputter = new ConsoleOutputter();
+        $this->outputter = $outputter;
     }
 
     public function processInput(){

@@ -23,7 +23,7 @@ class CommandFactory {
         // Add your commands here
     }
 
-    public function getCommandList(){
+    public function getCommands(){
         return $this->commands;
     }
 }
