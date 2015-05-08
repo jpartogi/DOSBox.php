@@ -1,6 +1,6 @@
 A base code that we use during Scrum.org Professional Scrum Developer Certification Course.
 
-Check out our Scrum.org [Professional Scrum Developer Certification Course](http://www.leanagile.in/programs/show/professional-scrum-developer) to boost your Development Team performance.
+Check out our Scrum.org [Professional Scrum Developer Certification Course](http://www.leanagile.in/programs/show/professional-scrum-developer) to boost your Development Team performance. At the moment we can conduct it using PHP, Ruby, Python, Java, NodeJS and C#.
 
 We also run these courses:
 
