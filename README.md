@@ -9,10 +9,14 @@ We also run these courses:
 
 At the moment we run Professional Scrum Courses in [Sydney](http://www.leanwithagility.com/trainings/australia/sydney), [Perth](http://www.leanwithagility.com/trainings/australia/perth), [Melbourne](http://www.leanwithagility.com/trainings/australia/melbourne), [Singapore](http://www.leanwithagility.com/trainings/singapore/singapore), [Vietnam](http://www.leanwithagility.com/trainings/vietnam), [Hong Kong](http://www.leanwithagility.com/trainings/china/hong-kong), [Dubai](http://www.leanwithagility.com/trainings/united-arab-emirates/dubai), [Malaysia](http://www.leanwithagility.com/trainings/malaysia), [Thailand](http://www.leanwithagility.com/trainings/thailand) and [Philippines](http://www.leanwithagility.com/trainings/philippines).
 
+## Download dependencies
+
+php composer.phar update
+
 ## Run the application
 
 php app.php
 
 ## Run unit test
 
-php phpunit.phar tests
+.\vendor\bin\phpunit tests
