@@ -1,5 +1,9 @@
-![alt text](https://codeship.com/projects/113154/status?branch=master
+![alt text](https://codeship.com/projects/fafb3220-647c-0133-9091-5a56884200ab/status?branch=master
  "Codeship")
+
+[![Code Climate](https://codeclimate.com/github/jpartogi/DOSBox.php/badges/gpa.svg)](https://codeclimate.com/github/jpartogi/DOSBox.php)
+
+[![Test Coverage](https://codeclimate.com/github/jpartogi/DOSBox.php/badges/coverage.svg)](https://codeclimate.com/github/jpartogi/DOSBox.php/coverage)
 
 A base code that we use during Scrum.org [Professional Scrum Developer Certification Course](http://www.leanwithagility.com/programs/show/professional-scrum-developer).
 
