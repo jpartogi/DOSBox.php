@@ -6,8 +6,8 @@ use DOSBox\Command\Library\CmdMock;
 class CommandInvokerTest extends DOSBoxTestCase {
     protected function setUp() {
     	parent::setUp();
-    	$this->drive = $this->getMock('DOSBox\Interfaces\IDrive');
-    	$this->outputter = $this->getMock('DOSBox\Interfaces\IOutputter');
+    	$this->drive = $this->createMock('DOSBox\Interfaces\IDrive');
+    	$this->outputter = $this->createMock('DOSBox\Interfaces\IOutputter');
     	$this->command = new CmdMock("test", $this->drive);
     	
     	$commands = array($this->command);
