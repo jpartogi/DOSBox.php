@@ -4,7 +4,7 @@ machine:
 
 test:
   override:
-    - php vendor/bin/phpunit tests
+    - ./vendor/bin/phpunit tests
 
 #dependencies:
 #  pre:
